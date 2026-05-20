@@ -38,6 +38,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xOb3RGb3VuZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mwmalupande/Desktop/learning.c\#/.NET10/clean-todo-app/TodoApp.Presentation/Components/Pages/Todos/DeleteTodoDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUb2Rvc1xEZWxldGVUb2RvRGlhbG9nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mwmalupande/Desktop/learning.c\#/.NET10/clean-todo-app/TodoApp.Presentation/Components/Pages/Todos/TodoDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUb2Rvc1xUb2RvRGlhbG9nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mwmalupande/Desktop/learning.c\#/.NET10/clean-todo-app/TodoApp.Presentation/Components/Pages/Todos/TodoPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUb2Rvc1xUb2RvUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mwmalupande/Desktop/learning.c\#/.NET10/clean-todo-app/TodoApp.Presentation/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

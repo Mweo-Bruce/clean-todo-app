@@ -1,1 +1,10 @@
-<Solution />
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="TodoApp.Infrastructure/TodoApp.Infrastructure.csproj" />
+    <Project Path="TodoApp.Presentation/TodoApp.Presentation.csproj" />
+  </Folder>
+  <Folder Name="/src/core/">
+    <Project Path="TodoApp.Application/TodoApp.Application.csproj" />
+    <Project Path="TodoApp.Domain/TodoApp.Domain.csproj" />
+  </Folder>
+</Solution>
