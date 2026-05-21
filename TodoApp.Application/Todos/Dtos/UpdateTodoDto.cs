@@ -1,5 +1,8 @@
 ﻿namespace TodoApp.Application.Todos.Dtos;
 
-public class UpdateTodoDto
-{
-}
+public record UpdateTodoDto(
+    Guid Id,
+    string Title,
+    string? Description,
+    bool IsCompleted
+);

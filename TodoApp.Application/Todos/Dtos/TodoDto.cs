@@ -1,5 +1,9 @@
 ﻿namespace TodoApp.Application.Todos.Dtos;
 
-public class TodoDto
-{
-}
+public record TodoDto(
+    Guid Id,
+    string Title,
+    string? Description,
+    bool IsCompleted,
+    DateTime CreatedAt
+);

@@ -1,5 +1,6 @@
 ﻿namespace TodoApp.Application.Todos.Dtos;
 
-public class CreateTodoDto
-{
-}
+public record CreateTodoDto(
+    string Title,
+    string? Description
+);

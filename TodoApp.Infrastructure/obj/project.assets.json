@@ -1239,6 +1239,29 @@
         "build": {
           "buildTransitive/net8.0/_._": {}
         }
+      },
+      "TodoApp.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "TodoApp.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TodoApp.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TodoApp.Application.dll": {}
+        }
+      },
+      "TodoApp.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/TodoApp.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TodoApp.Domain.dll": {}
+        }
       }
     }
   },
@@ -3618,12 +3641,23 @@
         "system.security.cryptography.protecteddata.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "TodoApp.Application/1.0.0": {
+      "type": "project",
+      "path": "../TodoApp.Application/TodoApp.Application.csproj",
+      "msbuildProject": "../TodoApp.Application/TodoApp.Application.csproj"
+    },
+    "TodoApp.Domain/1.0.0": {
+      "type": "project",
+      "path": "../TodoApp.Domain/TodoApp.Domain.csproj",
+      "msbuildProject": "../TodoApp.Domain/TodoApp.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
       "Microsoft.EntityFrameworkCore.Design >= 10.0.8",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.8"
+      "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.8",
+      "TodoApp.Application >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3658,7 +3692,11 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\mwmalupande\\Desktop\\learning.c#\\.NET10\\clean-todo-app\\TodoApp.Application\\TodoApp.Application.csproj": {
+              "projectPath": "C:\\Users\\mwmalupande\\Desktop\\learning.c#\\.NET10\\clean-todo-app\\TodoApp.Application\\TodoApp.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
