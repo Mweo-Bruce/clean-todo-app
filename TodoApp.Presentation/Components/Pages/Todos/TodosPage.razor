@@ -5,7 +5,72 @@
 
 <MudContainer MaxWidth="MaxWidth.Large" Class="mt-6">
 
+    <MudStack Row="true" Justify="Justify.SpaceBetween" AlignItems="AlignItems.Center" Class="mb-4">
+        <MudText Typo="Typo.h5">Todo List</MudText>
 
+        <MudButton
+            Variant="Variant.Filled"
+            Color="Color.Primary"
+            OnClick="@(() => OpenCreateDialog())"
+            >
+            Add Todo
+        </MudButton>
+    </MudStack>
+
+    <MudPaper Class="pa-4">
+
+        @if (_isLoading)
+        {
+            <MudProgressCircular Indeterminate="true" />
+        }
+        else if (_todos.Count == 0)
+        {
+            <MudAlert Severity="Severity.Info">
+                No todos found. Click "Add Todo" to create one.
+            </MudAlert>
+        }
+        else
+        {
+            <MudTable Items="_todos" Hover="true" Dense="true">
+                <HeaderContent>
+                    <MudTh>Title</MudTh>
+                    <MudTh>Description</MudTh>
+                    <MudTh>Status</MudTh>
+                    <MudTh>Created</MudTh>
+                    <MudTh>Actions</MudTh>
+                </HeaderContent>
+
+                <RowTemplate>
+                    <MudTd>@context.Title</MudTd>
+                    <MudTd>@context.Description</MudTd>
+                    <MudTd>
+                        @if (context.IsCompleted)
+                        {
+                            <MudChip T="string" Color="Color.Success" Size="Size.Small">Completed</MudChip>
+                        }
+                        else
+                        {
+                            <MudChip T="string" Color="Color.Warning" Size="Size.Small">Pending</MudChip>
+                        }
+                    </MudTd>
+                    <MudTd>@context.CreatedAt</MudTd>
+                    <MudTd>
+                        <MudIconButton
+                            Icon="@Icons.Material.Filled.Edit"
+                            Color="Color.Primary"
+                            OnClick="@(() => OpenEditDialog(context))" />
+
+                        <MudIconButton
+                            Icon="@Icons.Material.Filled.Delete"
+                            Color="Color.Error"
+                            OnClick="@(() => DeleteTodo(context.Id))"/>
+                    </MudTd>
+
+                </RowTemplate>
+            </MudTable>
+        }
+
+    </MudPaper>
 
 </MudContainer>
 
@@ -41,7 +106,7 @@
 
     private async Task OpenEditDialog(TodoDto todo)
     {
-        var parameters = new DialogParameters
+        var parameters = new DialogParameters<TodoDialog>
             {
                 ["Todo"] = todo
             };
