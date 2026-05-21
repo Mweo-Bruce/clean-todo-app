@@ -1,5 +1,65 @@
-﻿<h3>TodoDialog</h3>
+﻿@inject TodoService TodoService
+
+<MudDialog>
+    <DialogContent>
+
+        <MudStack Spacing="3">
+
+            <MudTextField 
+                @bind-Value="_title"
+                Label="Title"
+                Required="true"
+                Variant="Variant.Outlined"/>
+
+        </MudStack>
+
+    </DialogContent>
+</MudDialog>
 
 @code {
+    [CascadingParameter]
+    private IMudDialogInstance MudDialog { get; set; } = default!;
 
+    [Parameter]
+    public TodoDto? Todo { get; set; }
+
+    private string _title = string.Empty;
+    private string? _description;
+    private bool _isCompleted;
+
+    protected override void OnInitialized()
+    {
+        if (Todo is not null)
+        {
+            _title = Todo.Title;
+            _description = Todo.Description;
+            _isCompleted = Todo.IsCompleted;
+        }
+    }
+
+    private async Task Save()
+    {
+        if (string.IsNullOrWhiteSpace(_title))
+            return;
+
+        if (Todo is null)
+        {
+            var createDto = new CreateTodoDto(_title, _description);
+
+            await TodoService.CreateAsync(createDto);
+        }
+        else
+        {
+            var updateDto = new UpdateTodoDto(Todo.Id, _title, _description, _isCompleted);
+
+            await TodoService.UpdateAsync(updateDto);
+        }
+
+        MudDialog.Close(DialogResult.Ok(true));
+    }
+
+    private void Cancel()
+    {
+        MudDialog.Cancel();
+    }
 }

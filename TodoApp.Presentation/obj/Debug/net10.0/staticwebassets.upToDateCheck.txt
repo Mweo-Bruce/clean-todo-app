@@ -1,0 +1,8 @@
+C:\Users\mwmalupande\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.3\build\..\_framework\blazor.server.js
+C:\Users\mwmalupande\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.3\build\..\_framework\blazor.web.js
+Components\Layout\ReconnectModal.razor.js
+C:\Users\mwmalupande\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.3\_framework\blazor.server.js
+C:\Users\mwmalupande\Desktop\learning.c#\.NET10\clean-todo-app\TodoApp.Presentation\wwwroot\app.css
+C:\Users\mwmalupande\Desktop\learning.c#\.NET10\clean-todo-app\TodoApp.Presentation\Components\Layout\ReconnectModal.razor.js
+C:\Users\mwmalupande\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.3\_framework\blazor.web.js
+wwwroot\app.css

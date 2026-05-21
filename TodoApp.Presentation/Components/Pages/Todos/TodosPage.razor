@@ -1,0 +1,66 @@
+﻿@page "/todos"
+@inject TodoService TodoService
+@inject IDialogService DialogService
+@inject ISnackbar Snackbar
+
+<MudContainer MaxWidth="MaxWidth.Large" Class="mt-6">
+
+
+
+</MudContainer>
+
+@code {
+    private List<TodoDto> _todos = [];
+    private bool _isLoading = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadTodos();
+    }
+
+    private async Task LoadTodos()
+    {
+        _isLoading = true;
+
+        _todos = await TodoService.GetAllAsync();
+
+        _isLoading = false;
+    }
+
+    private async Task OpenCreateDialog()
+    {
+        var dialog = await DialogService.ShowAsync<TodoDialog>("Create Todo");
+        var result = await dialog.Result;
+
+        if (!result!.Canceled)
+        {
+            await LoadTodos();
+            Snackbar.Add("Todo created successfully.", Severity.Success);
+        }
+    }
+
+    private async Task OpenEditDialog(TodoDto todo)
+    {
+        var parameters = new DialogParameters
+            {
+                ["Todo"] = todo
+            };
+
+        var dialog = await DialogService.ShowAsync<TodoDialog>("Edit Todo", parameters);
+        var result = await dialog.Result;
+
+        if (!result!.Canceled)
+        {
+            await LoadTodos();
+            Snackbar.Add("Todo updated successfully.", Severity.Success);
+        }
+    }
+
+    private async Task DeleteTodo(Guid id)
+    {
+        await TodoService.DeleteAsync(id);
+        await LoadTodos();
+
+        Snackbar.Add("Todo deleted successfully.", Severity.Success);
+    }
+}

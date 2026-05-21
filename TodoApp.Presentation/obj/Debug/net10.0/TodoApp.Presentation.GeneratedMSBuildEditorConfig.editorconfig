@@ -1,14 +1,25 @@
 is_global = true
 build_property.TargetFramework = net10.0
-build_property.TargetFrameworkIdentifier = .NETCoreApp
-build_property.TargetFrameworkVersion = v10.0
+build_property.TargetFramework = net10.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.MudDebugAnalyzer = 
+build_property.MudAllowedAttributePattern = 
+build_property.MudAllowedAttributeList = 
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
 build_property.RootNamespace = TodoApp.Presentation
 build_property.RootNamespace = TodoApp.Presentation
 build_property.ProjectDir = C:\Users\mwmalupande\Desktop\learning.c#\.NET10\clean-todo-app\TodoApp.Presentation\
@@ -46,8 +57,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUb2Rvc1xUb2RvRGlhbG9nLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mwmalupande/Desktop/learning.c\#/.NET10/clean-todo-app/TodoApp.Presentation/Components/Pages/Todos/TodoPage.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUb2Rvc1xUb2RvUGFnZS5yYXpvcg==
+[C:/Users/mwmalupande/Desktop/learning.c\#/.NET10/clean-todo-app/TodoApp.Presentation/Components/Pages/Todos/TodosPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUb2Rvc1xUb2Rvc1BhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mwmalupande/Desktop/learning.c\#/.NET10/clean-todo-app/TodoApp.Presentation/Components/Routes.razor]

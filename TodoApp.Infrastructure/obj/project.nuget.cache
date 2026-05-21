@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/GDa7GmyQCg=",
+  "dgSpecHash": "olhyFp2opbU=",
   "success": true,
   "projectFilePath": "C:\\Users\\mwmalupande\\Desktop\\learning.c#\\.NET10\\clean-todo-app\\TodoApp.Infrastructure\\TodoApp.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,7 @@
     "C:\\Users\\mwmalupande\\.nuget\\packages\\microsoft.entityframeworkcore.design\\10.0.8\\microsoft.entityframeworkcore.design.10.0.8.nupkg.sha512",
     "C:\\Users\\mwmalupande\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\10.0.8\\microsoft.entityframeworkcore.relational.10.0.8.nupkg.sha512",
     "C:\\Users\\mwmalupande\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\10.0.8\\microsoft.entityframeworkcore.sqlserver.10.0.8.nupkg.sha512",
+    "C:\\Users\\mwmalupande\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\10.0.8\\microsoft.entityframeworkcore.tools.10.0.8.nupkg.sha512",
     "C:\\Users\\mwmalupande\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\10.0.8\\microsoft.extensions.caching.abstractions.10.0.8.nupkg.sha512",
     "C:\\Users\\mwmalupande\\.nuget\\packages\\microsoft.extensions.caching.memory\\10.0.8\\microsoft.extensions.caching.memory.10.0.8.nupkg.sha512",
     "C:\\Users\\mwmalupande\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.8\\microsoft.extensions.configuration.abstractions.10.0.8.nupkg.sha512",
